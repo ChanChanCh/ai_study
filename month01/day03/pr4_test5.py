@@ -1,0 +1,9 @@
+numbers = [1,2,3,4,5,6,7,8,9]
+
+# range(0,4)와 같음
+for i in range(0, len(numbers)// 2) :
+    j= 2*i+1
+    print(f"i={i}, j = {j}")
+    numbers[j] = numbers[j]**2
+
+print(numbers)

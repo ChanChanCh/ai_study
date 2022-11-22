@@ -1,0 +1,22 @@
+package stream;
+
+import java.io.*;
+
+public class IOstream04 {
+
+	public static void main(String[] args) throws IOException {
+
+		
+
+		
+		InputStream os3 = new FileInputStream("a.dat");
+		
+		System.out.println(os3.read());
+		os3.close();
+		
+		
+		
+
+	}
+
+}

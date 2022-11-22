@@ -1,0 +1,27 @@
+ 
+ p::first-line{
+    font-size: 1.5rem;
+ }
+p::first-letter{
+   font-size: 3rem;;
+}
+
+ li::marker{
+   color: white
+ }
+ 
+ h2{color: orangered}
+ 
+ h2::after{
+   content: " 몇 곡";
+   color: teal;
+ }
+
+ h2::before{
+   content: "";
+   color: teal;
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   background-color: teal;
+ }

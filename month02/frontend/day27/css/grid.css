@@ -1,0 +1,38 @@
+.parent{
+    border: 3px solid red;
+    display: grid;
+
+    /* width: 500px; */
+  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 40px;
+
+    /* grid-template-areas: 
+    "일 일 이"
+    "삼 사 오" */
+    
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.children:nth-child(1){justify-self: start;}
+/* .children:nth-child(2){grid-area: 이;}
+.children:nth-child(3){grid-area: 삼;}
+.children:nth-child(4){grid-area: 사;} */
+.children:nth-child(5){align-self: end;}
+.children{
+    background-color: orange;
+    border: 3px solid teal;
+}
+
+
+/*
+auto-fill과 auto-fit 차이
+auto-fit은 컨테이너 내부에 공간이
+남을 경우, 공간을 셀들이 나눠 갖는다
+반면 fill은 셀이 들어갈 공간을 만든다
+
+
+*/

@@ -1,0 +1,98 @@
+.face{
+    width: 1000px;
+    height: 800px;
+    background-color: rgb(251, 204, 123);
+    border-radius: 30%;
+}
+.face2{
+    margin-top: 50px;
+    position: relative;
+}
+.div1{
+    width: 300px;
+    height: 300px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+.div2{
+    width: 150px;
+    height: 150px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%); */
+    top: 25%;
+    animation-name: moving;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+.gonziface{
+    width: 1000px;
+    height: 200px;
+    position: relative;
+}
+.gonzi1{
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 30%;
+    float: left;
+    margin-left: 20px;;
+}
+.gonzi2{
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 30%;
+    float: right;
+    margin-right: 20px;
+}
+
+.mouth_t{
+    width: 1000px;
+    height: 400px;
+    position: relative;
+}
+
+.mouth{
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    background-color: pink;
+    border-radius: 30%;
+}
+
+.text{
+    width: 200px;
+    font-size: 1em;
+    transition: width 2s linear 0s,
+    font-size 2s linear 0s;
+}
+.text:hover{
+    width: 200px;
+    font-size: 2.5em;
+
+}
+
+@keyframes moving{
+    0%{  left:30px; }
+    25%{ left:75px}
+    50%{ left: 125px}
+    75%{ left: 75px}
+    100%{ left: 30px;}
+}

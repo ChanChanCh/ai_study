@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Photo Slide - DOG ALBUM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <video class="bg-video" autoplay muted loop>
+      <source src="./BGvideo.mp4" type="video/mp4" />
+    </video>
+
+    <div class="appBox">
+        <h1 class="title">댕댕이의 하루</h1>
+      <div class="app">
+        <div id="photo" class="photo"></div>
+        <button id="prev" class="prev">PREV</button>
+        <button id="next" class="next">NEXT</button>
+      </div>
+
+      <p class="memo"> 2022년 11월 21일<br>
+      댕댕이 하루 기록하기~! 
+     먹고 자고 놀고... 걱정이 없는 
+     니가 부럽다 댕댕아...</p>
+
+    </div>
+  </div>
+    
+  <div id="beginning" class="no-photo beginning">
+    <button id="call-btn" class="call-btn">댕댕월드</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

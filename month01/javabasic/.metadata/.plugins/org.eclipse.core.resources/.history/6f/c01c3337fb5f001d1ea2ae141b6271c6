@@ -1,0 +1,25 @@
+package ththth;
+
+import java.util.Arrays;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class Solution {
+
+	public static void main(String[] args) {
+
+
+		String st = "aAb1B2cC34oOp" ;
+		String k = st.replaceAll( "[a-zA-Z]" , "");
+		System.out.print(k);
+		
+		System.out.println();
+	
+		int number = Integer.parseInt(k);
+		
+		int[] arrNum = Stream.of(String.valueOf(k).split("")).mapToInt(Integer::parseInt).toArray();
+		
+		System.out.print(Arrays.toString(arrNum));
+		
+	}
+}

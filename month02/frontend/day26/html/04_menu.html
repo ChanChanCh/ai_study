@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메뉴 만들기</title>
+  <style>
+    @font-face {
+      font-family: 'GangwonEduPowerExtraBoldA';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    *{ 
+      font-family: 'GangwonEduPowerExtraBoldA'; 
+    }
+    body{ margin: 0; }
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-start;
+      background-color: black;
+    }
+    li{
+      height: 30px;
+      padding: 10px 10px 0; /* 보기에 예쁘게 조정 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    li:first-child{ background-color: turquoise;}
+    li:hover{ 
+      background-color: gray; 
+      cursor: pointer;
+    }
+    li:active{ 
+      background-color: darkgray;
+    }
+  </style>
+</head>
+<body>
+ 
+  <nav>
+    <ul>
+      <li>HOME</li>
+      <li>NEWS</li>
+      <li>CONTACT</li>
+      <li>ABOUT</li>
+    </ul>
+  </nav>
+</body>
+</html>

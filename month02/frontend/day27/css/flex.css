@@ -1,0 +1,38 @@
+.parent{
+    /* width: 500px; */
+    height: 500px;
+    border: 1px solid #000;
+    /* 자식의 말을 듣지 않음*/
+    display: flex;
+    /* 부모에게 주는 속성 */
+    /* flex-direction: low;
+    flex-wrap: wrap; */
+    /* flex-flow는 방향과 줄바꿈 여부를 함께 결정하는 단축 송성이다. */
+    flex-flow: row nowrap;
+    /* 자식들의 공간 공평히 나누기 space-around */
+    /* justify-content: space-between; */
+    align-content:flex-start ;
+   
+}
+.children{
+    /* width: 100px; height: 100px; */
+    background-color: tomato;
+}
+.children:nth-child(2){
+    background-color: teal;
+    /* flex-grow: 1; */
+    /* 확대축소가능여부 결정 */
+    flex-basis: 200px;
+    order: 1;
+}
+
+.children:nth-child(1){
+    background-color: tomato;
+    order: 2;
+    
+}
+.children:nth-child(3){
+    background-color: green;
+    order: 4;
+    
+}

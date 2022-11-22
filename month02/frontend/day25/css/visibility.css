@@ -1,0 +1,29 @@
+div{
+    width: 100px;
+    height: 100px;
+}
+.main{
+    width: 800px;
+    height : 800px;
+    border: 1px solid #000;
+    
+}
+
+.one{
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin:20;
+}
+
+.two{
+    border: 3px dashed rgb(69, 217, 116);
+    /* display: none; */
+    /* 있지만 없는상태 display: none과 차이큼  */
+    visibility: hidden; 
+}
+
+.three{
+    border: 1px solid #000;
+    margin: auto;
+}

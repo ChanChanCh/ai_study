@@ -1,0 +1,41 @@
+input{
+    height: 20px;
+}
+button{
+    height: 20px;
+    width: 80px;
+    color: white;
+    background-color: tomato;
+    border:none;
+    
+}
+
+button:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+
+button:active{
+    color: gray;
+    font-size: 0.6em;
+}
+
+input:focus{
+    background-color: skyblue;
+    outline: none;
+}
+
+input:disabled{
+    display: none;
+}
+
+li:nth-child(2n-1){
+    color: brown;
+}
+
+li:first-child{
+    color: red;
+}
+li:last-child{
+    color:teal; 
+}

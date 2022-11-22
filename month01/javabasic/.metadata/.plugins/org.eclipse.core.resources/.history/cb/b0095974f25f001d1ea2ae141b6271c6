@@ -1,0 +1,20 @@
+package day22;
+
+public class Solution {
+
+	public static void main(String[] args) {
+
+
+		String st = "12s3a45f6g" ;
+		String k = st.replaceAll( "[a-zA-Z]" , "");
+		System.out.print(k);
+		
+		System.out.println();
+	
+		int number = Integer.parseInt(k);
+		
+		System.out.print(number);
+		
+
+}
+}

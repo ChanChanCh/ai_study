@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'Dongle-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108_2@1.0/Dongle-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  font-family: 'Dongle-Regular';
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 18px;
+}
+
+body{
+  margin: 0; 
+  background-color: rgb(146, 128, 157);
+  background-image: url();
+  background-size: 100% 100%;
+  background-repeat:no-repeat
+  
+}
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+
+.titleBox{
+  border: 1px solid #000;
+  width: 600px;height: 100px;
+  display: inline-block;
+}
+.title{
+  font-size: larger;
+  position: relative;
+  width: 500px;
+  height: 150px;
+  font-size: 3.5em;
+  margin-left: 50px;
+  top : 5%;
+ 
+
+}
+.appBox{
+  position: relative;
+  width: 800px;
+  height: 1000px;
+  display: flex;
+  border: 10px solid rgba(17, 21, 52, 0.394);
+  top: 10%;
+  background: rgba(232, 216, 240, 0.778);
+
+ 
+  box-shadow: 5px 5px 5px 0 #000000;
+
+}
+
+.app{
+  position: absolute;
+  width: 600px;
+  min-width: 600px;
+  height: 400px;
+  background-color: rgb(244, 166, 89);
+  border-radius: 10px;
+  margin-top: 35%;
+  margin-left: 12.5%;
+ 
+}
+
+.memo{
+  position: relative;
+  background-color: #fff;
+  border: 10px solid rgb(191, 170, 84);
+  width: 850px;
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 95%;
+  font-size: 2em;
+  box-sizing: border-box;
+}
+
+
+.call-btn{
+  width: 500px;
+  height: 250px;
+}
+
+button{
+  font-size: 30px;
+  width: 300px;
+  height: 60px;
+  border: none;
+  color: white;
+  /* border: 5px solid rgb(104, 99, 99); */
+  background-color: rgb(188, 210, 117); 
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 0 #000000;
+}
+
+button:active{
+  background-color:rgb(2, 28, 64);
+}
+
+.app > .photo{
+  height: 360px;
+  border-radius: 10px 10px 0 0;
+  background-size: 100% 100%;
+  box-shadow: 5px 5px 5px 0 #000000;
+  border: 10px solid rgb(194, 166, 74);
+}
+
+.app > .prev{
+  float: left;
+  border-radius: 0 0 0 8px;
+}
+
+.app > .next{
+  float: right;
+  border-radius: 0 0 8px 0;
+}
+
+.no-photo{
+  display: none;
+}
+
+/* 콜버튼이 표시되는 역역 */
+.beginning{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(127, 146, 184, 0.992);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.call-btn{
+  font-size: 32px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0 #000000;
+}

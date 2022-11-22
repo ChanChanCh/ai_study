@@ -1,0 +1,41 @@
+package ex;
+
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+public class Ex00 {
+
+	public static void main(String[] args) {
+		
+		
+		String array = "205";
+
+		String str = "";
+		
+//		str = array.replaceAll("[a-z]","");
+				
+		
+//		int[] digits = Stream.of(String.valueOf(str).split("")).mapToInt(Integer::parseInt).sorted().toArray();
+		
+		
+	       Stream<String> ss1 = Stream.of(array);
+
+	       Stream<String> ss2 = ss1.flatMap(s -> Arrays.stream(s.split("")));
+	       
+	       
+	       String regex = "205";
+	       String str1 ="";
+	       
+
+	       String[] result = str1.split(regex);
+
+	       System.out.println(Arrays.asList(result));
+
+  
+	     
+	}
+		
+
+}
+
+

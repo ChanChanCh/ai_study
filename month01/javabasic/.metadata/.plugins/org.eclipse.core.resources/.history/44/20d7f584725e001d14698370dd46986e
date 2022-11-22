@@ -1,0 +1,30 @@
+package stream;
+
+import java.io.*;
+
+public class IOstream04 {
+
+	public static void main(String[] args) throws IOException {
+
+		try(
+				DataInputStream os2 =
+				new DataInputStream(
+					new BufferedInputStream(
+						new FileInputStream("a.dat")
+					)
+				)
+
+			){
+			System.out.println(os2.read());
+			os2.close();
+
+			
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+}
+
+

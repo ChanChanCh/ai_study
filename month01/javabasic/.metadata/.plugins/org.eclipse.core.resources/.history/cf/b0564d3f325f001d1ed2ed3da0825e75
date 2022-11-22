@@ -1,0 +1,30 @@
+package day22;
+
+public class Solution {
+
+	public static void main(String[] args) {
+
+		
+		String a = "abc";
+		String b = "";
+		int n = 3;
+		
+		for(int i = 0; i<a.length(); i++) {
+			
+		}
+		
+		System.out.print(a.charAt(0));
+		System.out.print(a.charAt(0));
+		System.out.print(a.charAt(0));
+		System.out.print(a.charAt(1));
+
+		for(int i =0; i<a.length(); i++) {
+			for(i =0; i<n; i++) {
+				b +=a.charAt(i);
+			}
+		}
+		
+		System.out.print(b);
+	}
+
+}

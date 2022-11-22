@@ -1,0 +1,25 @@
+body{
+    height: 5000px;
+}
+
+span{
+    display: inline-block;
+    width:  50px; height: 50px;
+
+    position: fixed;
+    bottom: 50px; 
+    right: 50px;
+}
+
+.doc{
+    height: 1000px;
+    background-color: yellow;
+}
+
+.doc-title{
+    height: 200px;
+    background-color: purple;
+
+    position: sticky;
+    top: 0;
+}

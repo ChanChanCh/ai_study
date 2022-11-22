@@ -1,0 +1,22 @@
+a[href]{
+    text-decoration: none;
+    color: tomato;
+}
+a[href*="goo"]{
+    text-decoration: line-through;
+    color:blue;
+}
+
+body > div > p {
+    color: tomato;
+}
+
+/* h1 뒤에있는 형제 p */
+h1 ~ p{
+    background-color: teal;
+
+}
+
+h1 + p {
+    font-size: 0.5em;
+}

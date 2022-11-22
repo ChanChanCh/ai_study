@@ -1,0 +1,44 @@
+package ex;
+
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+public class Ex00 {
+
+	public static void main(String[] args) {
+		
+		
+		String array = "205";
+
+		String str = "";
+		
+//		str = array.replaceAll("[a-z]","");
+				
+		
+//		int[] digits = Stream.of(String.valueOf(str).split("")).mapToInt(Integer::parseInt).sorted().toArray();
+		
+		
+	       Stream<String> ss1 = Stream.of(array);
+
+	       Object[] ss2 = ss1.flatMap(s -> Arrays.stream(s.split(""))).toArray();
+	       
+	       System.out.print(ss2.toString());
+	       
+	      
+
+		
+		
+	}
+	
+	String array;
+	
+	@Override
+	public String toString() {
+
+		return array;
+	}
+		
+
+}
+
+

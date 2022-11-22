@@ -1,0 +1,14 @@
+p{
+    color:blue;
+}
+p.text{
+    color:yellowgreen;
+}
+
+p#last{
+    color: blueviolet;
+}
+
+h1{
+    color: bisque;
+}

@@ -1,0 +1,50 @@
+.user-list a{
+  text-decoration: none;
+  color: initial;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px;
+  position: relative;
+}
+
+.user:hover{
+  background-color: #f2f2f2;
+}
+
+
+
+.user__pic:not(.my-profile .user__pic){
+  width: 60px; 
+  height: 60px;
+  border-radius: 20px;
+  background-image: url(/frontend/day28/coco/banana/img/orange.png);
+  background-size: 100% 100%;
+  margin-right: 10px;
+}
+
+.user__nick{
+  font-size: 0.9em;
+  margin: 5px;
+}
+
+.user__state, .user__message{
+  color: #f76666;
+  font-size: 0.8em;
+  margin: 5px;
+  width: 50vw;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.user__time{  
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  color: #aeaeae;
+  font-size: 0.8em;
+}

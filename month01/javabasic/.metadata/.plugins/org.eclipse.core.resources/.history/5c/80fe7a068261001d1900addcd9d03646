@@ -1,0 +1,30 @@
+package ex;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class Ex00 {
+
+	public static void main(String[] args) {
+		
+		
+		String array = "hi12392";
+
+		String str = "";
+		
+		str = array.replaceAll("[a-z]","");
+		
+		
+		
+		IntStream.of(str)
+		
+		
+//		Stream.of(array).
+		
+
+
+	}
+
+}

@@ -1,0 +1,53 @@
+.main{
+    width: 500px;
+    height: 500px;
+    border: 5px solid red;
+    position: relative;
+    display: flex;
+
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+    opacity: 1;
+    position: absolute;
+
+}
+/* .cicle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: none;
+    clip:shape ;
+    
+} */
+
+img{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    clip: rect(0px,500px,250px,250px);
+    z-index: 5;
+
+        animation-name: moving;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes moving{
+    0%{  clip: rect(0px,250px,250px,0px); }
+    25%{  clip: rect(250px,250px,500px,0px);}
+    50%{  clip: rect(250px,500px,500px,250px);}
+    75%{  clip: rect(0px,500px,250px,250px);}
+    100%{  clip: rect(0px,250px,250px,0px); }
+}
+

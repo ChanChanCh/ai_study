@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Dongle-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108_2@1.0/Dongle-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  *{
+    font-family: 'Dongle-Regular';
+    box-sizing: border-box;
+
+  }
+  
+  html{
+    font-size: 20px;
+  }
+  
+  body{
+    margin: 0; 
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid #000;
+    background: rgb(201, 161, 114);
+  }
+
+  .memo_header{
+    
+        border: 10px solid white;
+        position: relative;
+        width: 500px;
+        height: 500px;
+        border-radius: 16px;
+        background-color: rgb(234, 205, 120);
+        text-align: center;
+        justify-content: center;
+      
+  }
+
+  .memo_footer{
+    border: 10px solid rgb(204, 191, 96);
+    position: absolute;
+    width: 480px;
+    height: 80px;
+    border-radius: 16px;
+    background-color: rgb(243, 221, 152);
+    bottom: 0;
+    
+  
+  }
+
+  
+ul{
+    max-height: 360px;
+    margin: auto;
+    overflow: auto;
+  }
+  
+  ul > li{
+    cursor: pointer;
+
+
+    list-style-type: none;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    background-color: rgb(134, 122, 42);
+    border-radius: 8px;
+    
+  }
+  form{
+    background-color: gray(106, 94, 94);
+    position: absolute;
+    border-radius: 10;
+    border: none;
+    width: 480px;
+    height: 80px;
+    left: -10px;
+ 
+    border-radius: 15px;
+    
+  }
+  .to{
+    background-color: gray;
+    font-size: 1.4em;
+    margin-right: 8px;
+    float: right;
+    border: none;
+    height: 60px;
+    border-radius: 0 10px 10px 0;
+  }
+  .do{
+    background-color: rgb(243, 221, 152);
+    font-size: 1.4em;
+    margin-left: 30px;
+    border: none;
+    float: left;
+    height: 40px;
+    
+  }
+  
+  input:focus {
+    outline: none;
+}
+
+
+
+.done{
+    color: rgb(93, 93, 93);
+    background-color: rgb(234, 234, 234);
+  }
+
+  .done::after{
+    border-left: 16px solid rgb(234, 234, 234);
+  }

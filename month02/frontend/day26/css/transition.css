@@ -1,0 +1,24 @@
+h1{
+    width: 300px;
+    background-color: yellow;
+}
+
+h1:hover{
+    transition-property: width;
+    transition-duration: 3000ms;
+    transition-timing-function: linear;
+    transition-delay: 500ms;
+    transition: width 3000ms linear 500ms,
+    font-size 2s linear 0s;
+}
+
+.text{
+    width: 200px;
+    font-size: 1em;
+    transition: width 2s linear 0s,
+    font-size 2s linear 0s;
+}
+.text:hover{
+    width: 200px;
+    font-size: 2.5em;
+}

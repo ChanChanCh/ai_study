@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반응형 컴포넌트</title>
+  <link href="/frontend/day27/css/reset.css" rel="stylesheet">
+  <link href="/frontend/day27/css/header.css" rel="stylesheet">
+  <link rel="stylesheet" href="/frontend/day27/css/navigation.css">
+  <link rel="stylesheet" href="/frontend/day27/css/thumbs.css">
+
+  <!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ 
+<!-- Slick 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  
+
+  
+</head>
+
+<script>
+
+$('.responsive').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script>
+<body>
+
+  <header class="header">
+    <div class="header__wrapper">
+      <h1 class="header__start">
+        <button class="header__hamburger">&#9875;</button>
+        <span class="header__title">ChanTube</span>
+      </h1>
+      <div class="header__center">
+        <form class="header__form" onsubmit="return false;">
+          <input class="header__input--text" placeholder="보고싶은 동영상">
+          <button class="header__input--button">검색</button>
+        </form>
+      </div>
+      <div class="header__end">
+        <button class="header__search">&#128269;</button>
+        <div class="header__profile"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="contain">
+    <nav class="nav">
+      <ul class="nav__wrapper">
+        <li class="nav__item">
+          <button class="nav__icon">	
+            &#9874;</button>
+        <button class="nav__menu">인기 영상</button>
+      </li>
+      <li class="nav__item">
+        <button class="nav__icon">	
+          &#9874;</button>
+        <button class="nav__menu">시청 기록</button>
+      </li>
+      <li class="nav__item">
+        <button class="nav__icon">	
+          &#9874;</button>
+        <button class="nav__menu">구독</button>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="thumbs">
+    <div class="thumbs__wrapper">
+      <div class="thumbs__item">
+        <img class="thumbs__thumbnail" src="/frontend/day27/imgs/1.png">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">영상 제목</h3>
+            <p class="thumbs__text--owner">게시자</p>
+            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item">
+        <img class="thumbs__thumbnail" src="/frontend/day27/imgs/1.png">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">영상 제목</h3>
+            <p class="thumbs__text--owner">게시자</p>
+            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item">
+        <img class="thumbs__thumbnail" src="/frontend/day27/imgs/1.png">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">영상 제목</h3>
+            <p class="thumbs__text--owner">게시자</p>
+            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item">
+        <img class="thumbs__thumbnail" src="/frontend/day27/imgs/1.png">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">영상 제목</h3>
+            <p class="thumbs__text--owner">게시자</p>
+            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item">
+        <img class="thumbs__thumbnail" src="/frontend/day27/imgs/1.png">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">영상 제목</h3>
+            <p class="thumbs__text--owner">게시자</p>
+            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item">
+        <img class="thumbs__thumbnail" src="/frontend/day27/imgs/1.png">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">영상 제목</h3>
+            <p class="thumbs__text--owner">게시자</p>
+            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item">
+        <img class="thumbs__thumbnail" src="/frontend/day27/imgs/1.png">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">영상 제목</h3>
+            <p class="thumbs__text--owner">게시자</p>
+            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item">
+        <img class="thumbs__thumbnail" src="/frontend/day27/imgs/1.png">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">영상 제목</h3>
+            <p class="thumbs__text--owner">게시자</p>
+            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item">
+        <img class="thumbs__thumbnail" src="/frontend/day27/imgs/1.png">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">영상 제목</h3>
+            <p class="thumbs__text--owner">게시자</p>
+            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item">
+        <img class="thumbs__thumbnail" src="/frontend/day27/imgs/1.png">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">영상 제목</h3>
+            <p class="thumbs__text--owner">게시자</p>
+            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item">
+        <img class="thumbs__thumbnail" src="/frontend/day27/imgs/1.png">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">영상 제목</h3>
+            <p class="thumbs__text--owner">게시자</p>
+            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item">
+        <img class="thumbs__thumbnail" src="/frontend/day27/imgs/1.png">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">영상 제목</h3>
+            <p class="thumbs__text--owner">게시자</p>
+            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+
+
+
+  
+</body>
+</html>

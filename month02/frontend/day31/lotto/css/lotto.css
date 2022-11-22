@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'CookieRun-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{ 
+  font-family: 'CookieRun-Regular';
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 32px;
+  color: whitesmoke;
+  
+}
+
+body{
+  margin: 0;
+  background-color: rgb(61, 52, 52);
+  background-image: url(./block.png);
+  background-size: 100% 100%;
+}
+
+.container{
+  width: 350px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lotto{
+  text-align: center;
+}
+
+.numbers{
+  width: 350px;
+  height: 100px;
+  border: 3px solid rgb(183, 71, 58);
+  border-radius: 15px;
+  background-color: rgb(163, 163, 87);
+  display: flex;
+  justify-content: space-around;
+  background-image: url();
+  align-items: center;
+}
+
+.lottoball{
+  font-size: 0.75em;
+  width: 50px;
+  height: 50px;
+  border-radius: 1px;
+  color: white;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  font-size: 0.5em;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: rgb(90, 33, 27);
+  border: 3px solid rgb(183, 71, 58);
+  cursor: pointer;
+}
+
+button:active{
+  font-size: 0.6em;
+  width: 105px;
+  height: 42px;
+
+}
+
+body:active{
+  background-image: url(./money.jpg);
+  
+}
+
+
+html:active{
+  color: rgb(68, 0, 255);
+}

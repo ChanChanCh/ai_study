@@ -1,0 +1,22 @@
+
+ .box{
+    width: 200px; height: 200px;
+    background-color: blue;
+}
+
+
+@media screen and(max-width: 600px){
+    .box{
+        width: 200px; height: 200px;
+        background-color: blue;
+    }
+};
+
+
+
+@media screen and(max-width: 800px){
+    .box{
+        width: 200px; height: 200px;
+        background-color: green;
+    }
+};
