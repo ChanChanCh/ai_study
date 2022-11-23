@@ -1,5 +1,7 @@
 const http = require("http")    
 
+
+
 const server = http.createServer() // 서버 앱 생성
                     // listen은 서버  ,콜백함수를 받음
 server. listen(4000, () => {
